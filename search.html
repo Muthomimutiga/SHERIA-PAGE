@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Cases</title>
+<link rel="stylesheet" href="sheria.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.nuclia.cloud/nuclia-video-widget.umd.js"></script>
+
+<style>
+/* Reset default margins and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+ align-items: center; */
+}
+
+.s-container {
+  /* width: 1000px;
+    text-align: center; */
+  /* box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.5); */
+  border: none;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  /* position: fixed;
+top: 10px;
+left: 10px; */
+  width: 170px;
+  height: auto;
+  margin-right: 10rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+h5 {
+  font-size: 22px;
+}
+
+.search-text {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 1px;
+
+
+}
+
+.small-text {
+  font-size: 14px;
+  color: #888;
+}
+
+.large-text {
+  font-size: 24px;
+  color: #333;
+}
+
+.custom-search-box {
+  background-color: #7e6e20;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin-top: 20px;
+}
+
+.custom-search-box input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.custom-search-box i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.nuclia-bar {
+  width:auto;
+  /* border: 2px solid blue; */
+  /* background-color: blue; */
+}
+
+.results {
+  width: 80vw;
+  /* background-color: red; */
+  min-height: 30px;
+}
+
+.thumbnail-container {
+  background-color: blue;
+  
+}
+
+.sw-paragraph-result {
+  background-color: #f5f6ff;
+}
+
+.nuclia-widget{
+  border-radius: 100px;
+}
+
+.input-container{
+  border: 2px solid #ffd500;
+}
+
+.search-field{
+  padding: 20px !important;
+}
+</style>
+</head>
+
+<body>
+  
+      <!-- <div class="col d-flex align-items-center justify-content-end">
+        <h5 class="mr-2 mb-0">Welcome wakili,</h5>
+        <i class="fas fa-user-circle" style="font-size: 2.5rem"></i>
+      </div> -->
+    </div>
+  </div>
+
+
+  <!-- Text arrangement for the search area -->
+  <div class="search-text">
+    <p class="small-text">Search the way you think</p>
+    <p class="large-text">Find a case that says...</p>
+  </div>
+
+  <!-- Nuclia Search Bar -->
+  <div class="s-container">
+    <div class= "nuclia-bar">
+      <nuclia-search-bar 
+      knowledgebox="5674001c-c250-4b67-abd0-bc0288e4f57c"     zone="europe-1"
+       
+      
+      features="autofilter,answers,permalink,relations" 
+      placeholder="E.g:What should a landlord do before evicting a tenant" filters="labels"></nuclia-search-bar>
+    </div>
+    <div class="results">
+      <nuclia-search-results cssPath="./sheria.css"></nuclia-search-results
+    </div>
+  </div>
+</body>
+
+</html>
